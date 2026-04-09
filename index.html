@@ -176,29 +176,30 @@ footer{background:var(--dp);border-top:1px solid var(--bd);padding:24px 48px;dis
 .perk-dot{width:6px;height:6px;background:var(--or);border-radius:50%;flex-shrink:0;margin-top:4px}
 .perk-txt{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--tx);line-height:1.4}
 .modal-divider{height:1px;background:linear-gradient(90deg,transparent,var(--bd),transparent);margin-bottom:24px}
-.modal-form{display:flex;gap:0}
-.modal-form input{flex:1;background:#0e0e0e;border:1px solid var(--bd);border-right:none;color:var(--cr);font-family:'Barlow',sans-serif;font-size:14px;padding:15px 18px;outline:none;transition:border-color .2s}
-.modal-form input:focus{border-color:rgba(232,93,4,.6)}
-.modal-form input::placeholder{color:#3a3a3a}
-.modal-form button{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;background:var(--or);color:#000;border:none;padding:15px 22px;cursor:pointer;transition:background .2s;white-space:nowrap;position:relative;overflow:hidden}
-.modal-form button:hover{background:var(--am)}
-.modal-form button.ok{background:#22c55e}
-.modal-form button.loading::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.15);display:flex;align-items:center;justify-content:center}
-.modal-err{font-size:12px;color:#ff6b6b;margin-top:8px;display:none}
+.modal-divider{height:1px;background:linear-gradient(90deg,transparent,var(--bd),transparent);margin-bottom:20px}
+.modal-field{margin-bottom:13px}
+.modal-lbl{display:block;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--mt);margin-bottom:7px}
+.modal-field input{width:100%;background:#0e0e0e;border:1px solid var(--bd);color:var(--cr);font-family:'Barlow',sans-serif;font-size:14px;padding:13px 16px;outline:none;transition:border-color .2s}
+.modal-field input:focus{border-color:rgba(232,93,4,.6)}
+.modal-field input::placeholder{color:#3a3a3a}
+#modalBtn{width:100%;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:3px;text-transform:uppercase;background:#25d366;color:#000;border:none;padding:16px;cursor:pointer;margin-top:8px;transition:background .2s,transform .15s;display:flex;align-items:center;justify-content:center;gap:10px}
+#modalBtn:hover{background:#1ebe5d;transform:translateY(-1px)}
+#modalBtn::before{content:'';display:inline-block;width:18px;height:18px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000'%3E%3Cpath d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:contain;flex-shrink:0}
+.modal-err{font-size:12px;color:#ff6b6b;margin-top:6px;display:none}
 .modal-err.show{display:block}
-.modal-ok{text-align:center;padding:32px 0 8px;display:none}
+.modal-note{font-size:11px;color:var(--mt);margin-top:10px;text-align:center;line-height:1.6}
+.modal-ok{text-align:center;padding:28px 0 8px;display:none}
 .modal-ok.show{display:block}
-.modal-ok-icon{font-size:48px;margin-bottom:12px}
-.modal-ok-title{font-family:'Bebas Neue',sans-serif;font-size:36px;color:var(--cr);margin-bottom:8px}
-.modal-ok-title span{color:var(--or)}
-.modal-ok-sub{font-size:14px;color:var(--mt);line-height:1.7}
-.modal-note{font-size:11px;color:var(--mt);margin-top:12px;text-align:center}
-.modal-note b{color:rgba(232,93,4,.5)}
+.modal-ok-icon{font-size:52px;margin-bottom:14px}
+.modal-ok-title{font-family:'Bebas Neue',sans-serif;font-size:40px;color:var(--cr);margin-bottom:10px;line-height:1}
+.modal-ok-title span{color:#25d366}
+.modal-ok-sub{font-size:14px;color:var(--mt);line-height:1.75;margin-bottom:20px}
+.modal-ok-note{font-size:12px;color:var(--mt);margin-top:8px}
+.wa-redirect-bar{width:100%;height:4px;background:rgba(255,255,255,.08);overflow:hidden;margin:16px 0 10px}
+.wa-redirect-fill{height:100%;width:0%;background:#25d366;transition:width 2.5s linear}
 @media(max-width:480px){
-  .modal-inner{padding:28px 24px 24px}
+  .modal-inner{padding:28px 22px 24px}
   .modal-perks{grid-template-columns:1fr}
-  .modal-form{flex-direction:column}
-  .modal-form input{border-right:1px solid var(--bd);border-bottom:none}
 }
 </style>
 </head>
@@ -340,7 +341,7 @@ footer{background:var(--dp);border-top:1px solid var(--bd);padding:24px 48px;dis
       <div id="modalForm">
         <div class="modal-badge"><div class="modal-badge-dot"></div><span class="modal-badge-txt">Founding Member Access</span></div>
         <div class="modal-title">JOIN THE<br><span>NATION</span></div>
-        <p class="modal-sub">Be one of ThumpNation's first <b>1,000 founding riders</b>. You'll get exclusive perks that latecomers never will.</p>
+        <p class="modal-sub">Be one of ThumpNation's first <b>1,000 founding riders.</b> Tell us your name and bike — we'll add you personally.</p>
         <div class="modal-perks">
           <div class="perk"><div class="perk-dot"></div><div class="perk-txt">Free Pro Badge Forever</div></div>
           <div class="perk"><div class="perk-dot"></div><div class="perk-txt">Early Access Priority</div></div>
@@ -348,19 +349,32 @@ footer{background:var(--dp);border-top:1px solid var(--bd);padding:24px 48px;dis
           <div class="perk"><div class="perk-dot"></div><div class="perk-txt">Shape the Platform</div></div>
         </div>
         <div class="modal-divider"></div>
-        <div class="modal-form">
-          <input type="email" id="modalEmail" placeholder="your@email.com" autocomplete="email"/>
-          <button id="modalBtn" onclick="submitWaitlist()">Ride In →</button>
+        <div class="modal-field">
+          <label class="modal-lbl">Your Name</label>
+          <input type="text" id="modalName" placeholder="Rajesh Kumar" autocomplete="name"/>
         </div>
-        <div class="modal-err" id="modalErr">Enter a valid email address</div>
-        <div class="modal-note">No spam. Ever. <b>12,000+</b> riders already waiting.</div>
+        <div class="modal-field">
+          <label class="modal-lbl">Your Bike</label>
+          <input type="text" id="modalBike" placeholder="RE Himalayan, Dominar 400..."/>
+        </div>
+        <div class="modal-field">
+          <label class="modal-lbl">City</label>
+          <input type="text" id="modalCity" placeholder="Hyderabad, Mumbai..."/>
+        </div>
+        <div class="modal-err" id="modalErr">Please enter your name</div>
+        <button id="modalBtn" onclick="submitWaitlist()">
+          <span id="modalBtnTxt">Join via WhatsApp →</span>
+        </button>
+        <div class="modal-note"><span class="wa-icon">&#9998;</span> Opens WhatsApp with a pre-filled message. We'll add you to the riders list personally.</div>
       </div>
 
       <!-- Success view -->
       <div class="modal-ok" id="modalOk">
-        <div class="modal-ok-icon">🏍️</div>
-        <div class="modal-ok-title">YOU'RE IN THE<br><span>NATION</span></div>
-        <p class="modal-ok-sub">We'll hit you up the moment ThumpNation goes live. Get ready to ride.</p>
+        <div class="modal-ok-icon">&#128248;</div>
+        <div class="modal-ok-title">REDIRECTING TO<br><span>WHATSAPP</span></div>
+        <p class="modal-ok-sub" id="modalOkSub">Opening WhatsApp for you...</p>
+        <div class="wa-redirect-bar"><div class="wa-redirect-fill" id="waFill"></div></div>
+        <p class="modal-ok-note">If WhatsApp doesn't open, <a id="waFallback" href="#" target="_blank" style="color:var(--or)">tap here</a></p>
       </div>
 
     </div>
@@ -406,8 +420,7 @@ function openModal(){
     var inp=document.getElementById('modalEmail');
     if(inp && !inp.disabled) inp.focus();
   },360);
-  if(localStorage.getItem('tn_wl')) showModalSuccess();
-}
+  if(localStorage.getItem('tn_wl')) showModalSuccess();}
 
 function closeModal(){
   var bd=document.getElementById('modalBackdrop');
@@ -424,42 +437,43 @@ document.addEventListener('keydown',function(e){
 });
 
 function submitWaitlist(){
-  var inp=document.getElementById('modalEmail'),
-      btn=document.getElementById('modalBtn'),
-      err=document.getElementById('modalErr');
-  var email=inp.value.trim();
+  var name=document.getElementById('modalName').value.trim();
+  var bike=document.getElementById('modalBike').value.trim();
+  var city=document.getElementById('modalCity').value.trim();
+  var err=document.getElementById('modalErr');
 
-  if(!/^\S+@\S+\.\S+$/.test(email)){
+  if(!name){
+    err.textContent='Please enter your name';
     err.classList.add('show');
-    inp.style.borderColor='#ff6b6b';
-    setTimeout(function(){inp.style.borderColor='';err.classList.remove('show')},2000);
+    document.getElementById('modalName').style.borderColor='#ff6b6b';
+    setTimeout(function(){err.classList.remove('show');document.getElementById('modalName').style.borderColor=''},2000);
     return;
   }
 
-  btn.textContent='Joining...';
-  btn.disabled=inp.disabled=true;
+  var btn=document.getElementById('modalBtn');
+  btn.innerHTML='<span>Opening WhatsApp...</span>';
+  btn.disabled=true;
 
-  // ── Connect to your Vercel backend ──────────────────────────────────────
-  // Uncomment when your /api/waitlist endpoint is ready:
-  // fetch('/api/waitlist',{
-  //   method:'POST',
-  //   headers:{'Content-Type':'application/json'},
-  //   body:JSON.stringify({email:email})
-  // }).then(function(){
-  //   localStorage.setItem('tn_wl',email);
-  //   showModalSuccess();
-  // }).catch(function(){
-  //   btn.textContent='Ride In →';
-  //   btn.disabled=inp.disabled=false;
-  //   err.textContent='Something went wrong. Try again.';
-  //   err.classList.add('show');
-  // });
+  var msg='Hi ThumpNation! 🏍️\n\nI want to join the waitlist as a Founding Member.\n\n'
+    +'Name: '+name+'\n'
+    +(bike?'Bike: '+bike+'\n':'')
+    +(city?'City: '+city+'\n':'')
+    +'\nRide On! 🤘';
 
-  // ── Simulated success (remove when backend is connected) ────────────────
+  var waUrl='https://wa.me/919666411553?text='+encodeURIComponent(msg);
+  document.getElementById('waFallback').href=waUrl;
+
+  document.getElementById('modalForm').style.display='none';
+  document.getElementById('modalOk').classList.add('show');
+
   setTimeout(function(){
-    localStorage.setItem('tn_wl',email);
-    showModalSuccess();
-  },700);
+    document.getElementById('waFill').style.width='100%';
+  },100);
+
+  setTimeout(function(){
+    window.open(waUrl,'_blank');
+    document.getElementById('modalOkSub').textContent='WhatsApp is opening — send the message to confirm your spot!';
+  },2600);
 }
 
 function showModalSuccess(){
@@ -467,7 +481,13 @@ function showModalSuccess(){
   document.getElementById('modalOk').classList.add('show');
 }
 
-document.getElementById('modalEmail').addEventListener('keydown',function(e){
+document.getElementById('modalName').addEventListener('keydown',function(e){
+  if(e.key==='Enter') document.getElementById('modalBike').focus();
+});
+document.getElementById('modalBike').addEventListener('keydown',function(e){
+  if(e.key==='Enter') document.getElementById('modalCity').focus();
+});
+document.getElementById('modalCity').addEventListener('keydown',function(e){
   if(e.key==='Enter') submitWaitlist();
 });
 
